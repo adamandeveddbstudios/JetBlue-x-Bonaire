@@ -246,12 +246,12 @@ video {
   width: 149px;
   height: 22px;
   background-color: #0000aa;
-  border-radius: 7px;
+  border-radius: 5px;
   color: #fff;
   font-family: "ESKlarheitGrotesk Smbd";
   text-align: center;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 21px;
   letter-spacing: -0.374px;
   padding: 11px 0px;
   transform-origin: 50% 50%;

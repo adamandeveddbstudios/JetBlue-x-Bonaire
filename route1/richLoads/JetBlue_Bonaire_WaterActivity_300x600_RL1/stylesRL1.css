@@ -91,7 +91,7 @@ video {
   color: #0000aa;
   font-family: "DESKlarheitGrotesk Xbd";
   font-size: 30px;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   line-height:33px;
 }
 
@@ -176,7 +176,7 @@ video {
   font-family: "DINOT bold";
   text-align: center;
   font-size: 17px;
-  line-height: 19px;
+  line-height: 21px;
   letter-spacing: -0.374px;
   padding: 9px 0px;
   transform-origin: 50% 50%;
