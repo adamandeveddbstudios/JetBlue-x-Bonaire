@@ -1,0 +1,336 @@
+body,
+body * {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+img {
+  border: 0;
+}
+
+button,
+div,
+img,
+svg,
+video {
+  position: absolute;
+}
+
+#main_container {
+  position: absolute;
+  border: 1px solid #000000;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 300px;
+  height: 250px;
+}
+
+#main_content {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 300px;
+  height: 250px;
+}
+
+.retina {
+  /*    for display on retina screens images created @2x actual dimensions then scaled back by 50%.
+  images are scaled from top left, which effects css when wanting to use other alignment
+  e.g. bottom:0; right:0; also requires transform-origin:bottom right;
+  02/2016 webkit browsers:
+  images including their containers must be block or inline-block.
+  if css display:none or display:inline then transforms fail.
+  */
+  -webkit-transform: scale(0.5, 0.5);
+  -moz-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  -webkit-transform-origin: left top;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+
+  /* image-rendering: auto; */
+  /*image-rendering: crisp-edges;*/
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#default_exit {
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 250px;
+  z-index: 500;
+}
+
+@font-face {
+  font-family: "ESKlarheitGrotesk Smbd";
+  src: url("./fonts/ESKlarheitGrotesk-Smbd.woff");
+}
+
+@font-face {
+  font-family: "ESKlarheitGrotesk Xbd";
+  src: url("./fonts/ESKlarheitGrotesk-Xbd.woff");
+}
+
+/*@font-face {
+  font-family: "DINOT";
+  src: url("./fonts/DINOT.woff");
+}*/
+
+#text_holder {
+  color: #0000aa;
+  font-family: "ESKlarheitGrotesk Smbd";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 22px;
+  left: 22px;
+  width: 280px;
+  height: 156px;
+}
+
+#text_holder > * {
+  position: relative;
+}
+
+#spacer {
+  flex-grow: 1;
+}
+
+.blue {
+  color: #0000aa;
+}
+
+.orange {
+  color: #FF8300;
+}
+
+#cities {
+  padding-top: 3px;
+}
+
+.city {
+  font-family: "ESKlarheitGrotesk Xbd";
+  font-size: 18px;
+  line-height: 1.051;
+  letter-spacing: -0.414px;
+}
+.to{
+  font-family: "ESKlarheitGrotesk Smbd";
+  font-size: 19px;
+}
+
+#h3{
+  width: 200px;
+}
+
+#h4{
+  font-family: "ESKlarheitGrotesk Smbd";
+  font-size: 18px;
+  line-height: 1.180;
+  letter-spacing: -0.414px;
+  position: relative;
+  width: 270px;
+}
+
+#h4 .asterisk{
+  font-size: 11px;
+  line-height: 10px;
+}
+.default{
+  font-family: "ESKlarheitGrotesk Smbd";
+  font-size: 28px;
+  line-height: 1.051;
+  letter-spacing: -0.414px;
+  position: absolute;
+  top: 7px;
+}
+.default .go-with{
+  font-family: "ESKlarheitGrotesk Smbd";
+}
+.default .jetblue{
+  font-family: "ESKlarheitGrotesk Xbd"; 
+}
+
+#priceHolder {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.starting_at{
+  color: #0000aa;
+  font-family: "ESKlarheitGrotesk Smbd";
+  font-size: 13px;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+#ctaAndPriceWrapper {
+  display: flex;
+  width: 264px;
+  top: 2px;
+}
+
+#ctaAndPriceWrapper > * {
+  position: relative;
+}
+
+#price{
+  font-family: "ESKlarheitGrotesk Xbd";
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  letter-spacing: -0.414px;
+  margin-bottom: 10px;
+}
+
+ .dollar {
+  font-size: 30px;
+  line-height: 1;
+  position: relative;
+  margin-top: -2px;
+}
+
+#price .number {
+  font-family: "ESKlarheitGrotesk Xbd";
+  font-size: 53px;
+  line-height: 0.76;
+  letter-spacing: -2.4px;
+  position: relative;
+}
+
+#price {
+  font-size: 14px;
+  line-height: 0.86;
+  position: relative;
+  align-self: flex-end;
+  margin-left: 0px;
+  color: #FF8300;
+}
+
+.one_way {
+  font-family: "ESKlarheitGrotesk Smbd";
+  font-size: 13px;
+  line-height: 0.86;
+  position: relative;
+  align-self: flex-end;
+  margin-left: 5px;
+  color: #0033A0;
+  width: 50px;    
+}
+
+
+#price .asterisk {
+  font-family: "ESKlarheitGrotesk Smbd";
+  font-size: 10px;
+  line-height: 4px;
+  position: relative;
+  top: 1px;
+}
+
+#cta {
+  width: 92px;
+  height: 12px;
+  background-color:#0000aa;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "ESKlarheitGrotesk Smbd";
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.08;
+  letter-spacing: -0.374px;
+  padding: 9px 0px;
+  transform-origin: 50% 50%;
+  align-self: flex-end;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+
+.terms {
+  color: #fff;
+  position: absolute;
+  font-family: "ESKlarheitGrotesk Smbd";
+  font-size: 7px;
+  letter-spacing: -0.02em;
+  line-height: 11px;
+}
+
+#terms1 {
+  left: 21px;
+  top: 236px;
+}
+
+#terms2 {
+  left: 208px;
+  top: 236px;
+}
+
+#logo {
+  top: 175px;
+  left: 174px;
+  width: 70px;
+  height: auto;
+}
+
+#cta img{
+  top: -10px;
+  transform-origin: 77px 191px;
+  background-color: none;
+}
+
+.btn {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+  z-index: 200;
+}
+
+:focus {
+  outline: 0;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+/* Four Character Price Styles - see line line 153 mainRL2.js */
+.fourCharPrice {
+  font-size: 54px !important;
+  letter-spacing: -1.4px !important;
+}
+
+.fourCharDollar {
+  font-size: 30px !important;
+}
+
+.fourCharOneWay {
+  font-size: 12px !important;
+}
+
+.sm{
+  font-size: 12.5px;
+  line-height: 1.4;
+  letter-spacing: .2px;
+}
+
+
+#bgPanel {
+  width: 300px;
+  top: 0px;
+/*  z-index: 150;*/
+}
