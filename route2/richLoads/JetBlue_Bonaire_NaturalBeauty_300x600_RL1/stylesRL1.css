@@ -1,0 +1,306 @@
+body,
+body * {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+img {
+  border: 0;
+}
+
+button,
+div,
+img,
+svg,
+video {
+  position: absolute;
+}
+
+#main_container {
+  position: absolute;
+  background-color: #0000AA;
+  border: 1px solid #000000;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 300px;
+  height: 600px;
+}
+
+#main_content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 600px;
+}
+
+.retina {
+  /*    for display on retina screens images created @2x actual dimensions then scaled back by 50%.
+  images are scaled from top left, which effects css when wanting to use other alignment
+  e.g. bottom:0; right:0; also requires transform-origin:bottom right;
+  02/2016 webkit browsers:
+  images including their containers must be block or inline-block.
+  if css display:none or display:inline then transforms fail.
+  */
+  -webkit-transform: scale(0.5, 0.5);
+  -moz-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  -webkit-transform-origin: left top;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+
+  /* image-rendering: auto; */
+  /*image-rendering: crisp-edges;*/
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#default_exit {
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 600px;
+  z-index: 500;
+}
+
+@font-face {
+  font-family: "ESKlarheitGrotesk Smbd";
+  src: url("./fonts/ESKlarheitGrotesk-Smbd.woff");
+}
+
+@font-face {
+  font-family: "DESKlarheitGrotesk Xbd";
+  src: url("./fonts/ESKlarheitGrotesk-Xbd.woff");
+}
+
+/*@font-face {
+  font-family: "DINOT";
+  src: url("./fonts/DINOT.woff");
+}*/
+
+#text_holder {
+  color: #fff;
+  font-family: "DESKlarheitGrotesk Xbd";
+  font-size: 32px;
+  /* letter-spacing: 1px; */
+  line-height:34px;
+}
+
+#blueBottomCard {
+  background-color: #FFFFFF;
+  width: 300px;
+  height: 133px;
+  left: 0px;
+  top: 467px;
+}
+
+.blue {
+  color: #00E1FF;
+}
+
+.orange {
+  color: #FF8300;
+}
+
+#h1,
+#h2 {
+  width: 260px;
+  height: 74px;
+  left: 23px;
+  top: 68px;
+  letter-spacing: -0.2px;
+  top: 418px;
+/*  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.26);    */
+}
+#h2{
+  top: 98px;
+  line-height: 34px;
+}
+#price{
+  position: relative;
+  display: inline-block;
+  font-family: "DINOT bold";
+  top: 160px;
+  width: 230px;
+  left: 20px;
+}
+
+#price * {
+  position: relative;
+  display: inline-block;
+}
+
+#price .dollar {
+  font-size: 42px;
+  top: -10px;
+}
+
+#price .number {
+  font-family: "DINOT black";
+  font-size: 72px;
+  letter-spacing: -0.01em;
+  line-height: 26px;
+  top: 16px;
+  left: -6px;
+}
+
+#price .one_way {
+  left: -3px;
+  top: 16px;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  line-height: 15px;
+  width: 40px;
+}
+
+#price .asterisk {
+  font-family: "DINOT bold";
+  font-size: 10px;
+}
+
+#cta {
+  left: 20px;
+  top: 261px;
+  width: 115px;
+  height: auto;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  color: #0033A0;
+  font-family: "DINOT bold";
+  text-align: center;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: -0.374px;
+  padding: 9px 0px;
+  transform-origin: 50% 50%;
+
+}
+
+/* terms and logo text */
+
+.terms {
+  color: #fff;
+  font-family: "DESKlarheitGrotesk Xbd";
+  font-size: 7px;
+  letter-spacing: -0.02em;
+  line-height: 8px;
+  left: 22px;
+  width: 300px;
+}
+
+.terms .asterisk {
+  font-size: 8px;
+}
+
+#terms1 {
+  top: 568px;
+}
+
+#terms2 {
+  top: 568px;
+}
+
+#termsCopyright {
+  top: 582px;
+}
+
+#logoHolder {
+  width: 261px;
+  height: 61px;
+  left: 21px;
+  top: 488px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-between; */
+}
+
+#logoHolder > * {
+  position: relative
+}
+
+#logo {
+  width: 105.5px;
+  height: auto;
+}
+
+#partner_logo_container{
+  width: 0;
+  height: 61px;
+  z-index: 1501;
+  display: block;
+  white-space: nowrap;
+}
+
+#partner_logo_img{
+  width: 140px;
+  height: 61px;
+  object-fit: contain;
+  object-position: left;
+}
+
+#cta img{
+  top: -10px;
+  transform-origin: 77px 191px;
+  background-color: none;
+}
+
+.btn {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+  z-index: 200;
+}
+
+:focus {
+  outline: 0;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+#frame_1 {
+  height: 600px;
+  width: 300px;
+}
+
+#h1-back {
+  width: 300px;
+  top: 0px;
+  left: 0px;
+}
+
+
+#frame_2 {
+  width: 300px;
+  height: 600px;
+}
+
+
+#photo, #photo2 {
+  width: 390px;
+  height: auto;
+/*   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); full display version 
+  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);*/
+}
+
+#bubbles {
+  top: -40px;
+  left: -41px;
+  width: 452px;
+  height: auto;
+  transform: translate(63px, 187px);
+}
