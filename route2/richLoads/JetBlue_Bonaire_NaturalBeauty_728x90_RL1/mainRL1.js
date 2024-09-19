@@ -20,6 +20,14 @@ var ctURL = "";
 
 var default_exit = myFT.$("#default_exit");
 
+function checkURL(u){
+  if (u.indexOf("http://")==0||u.indexOf("https://")==0) { 
+    return true
+  } else {
+    return false
+  }
+}
+
 default_exit.on('click',function(){
   myFT.clickTag(1,ctURL);
 });
@@ -68,7 +76,9 @@ myFT.on('instantads',function(){
         try {
           /*Setting variable values from loaded feed (FEED PASSED THROUGH THE --theFeedLoaded-- CUSTOM EVENT)*/
           /*For example: the following variable ctURL is used to pass a url from feed into a dynamic clickTag*/
-          ctURL = feedItems[0]['url'];
+          // ctURL = feedItems[0]['url'];
+          
+          ctURL = checkURL(myFT.instantAds.Retail_dynamic_clickTag_URL) ? myFT.instantAds.Retail_dynamic_clickTag_URL : feed[0]['url'];
           //This variable will be passed through clicktag (inside clickEvent handler below) as a parameter
           //myFT.clickTag(1, ctURL);
           //If using dynamic text, set variables values to feed or dynamic variables setup in manifest/versions within instandAd*/

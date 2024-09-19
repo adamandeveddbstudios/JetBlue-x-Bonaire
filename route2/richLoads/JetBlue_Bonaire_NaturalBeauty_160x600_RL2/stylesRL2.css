@@ -147,6 +147,7 @@ video {
   width: 140px;
   position: relative;
   top: 41px;
+  margin-bottom: 18px;
 }
 
 #h4 .asterisk {
@@ -173,7 +174,7 @@ video {
 #priceHolder {
   display: flex;
   flex-direction: column;
-  margin-top: 48px;
+  margin-top: 68px;
   margin-bottom: 35px;
 }
 
@@ -334,8 +335,10 @@ video {
 
 .sm{
   font-size: 11.7px;
-  line-height: 1.08333;
+  line-height: 14px;
   letter-spacing: .2px;
+  margin-bottom: -14px;
+  display: block;
 }
 
 

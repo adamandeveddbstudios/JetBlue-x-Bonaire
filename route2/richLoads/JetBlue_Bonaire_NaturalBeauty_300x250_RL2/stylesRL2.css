@@ -137,7 +137,7 @@ video {
 #h4{
   font-family: "ESKlarheitGrotesk Smbd";
   font-size: 18px;
-  line-height: 1.180;
+  line-height: 18px;
   letter-spacing: -0.414px;
   position: relative;
   width: 270px;
@@ -179,7 +179,7 @@ video {
 #ctaAndPriceWrapper {
   display: flex;
   width: 264px;
-  top: 2px;
+  top: -15px;
 }
 
 #ctaAndPriceWrapper > * {
@@ -323,8 +323,8 @@ video {
 }
 
 .sm{
-  font-size: 12px;
-  line-height: 1.08333;
+  font-size: 12.5px;
+  line-height: 1.4;
   letter-spacing: .2px;
 }
 

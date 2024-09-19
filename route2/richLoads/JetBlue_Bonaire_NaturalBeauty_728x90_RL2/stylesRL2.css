@@ -97,7 +97,7 @@ video {
   color: #0000aa;
   font-family: "ESKlarheitGrotesk Smbd";
   letter-spacing: -0.414px;
-  top: 13px;
+  top: 8px;
   left: 22px;
 
 }
@@ -151,7 +151,7 @@ video {
   font-size: 26px;
   line-height: 28px;
   position: relative;
-  top: 3px;
+  top: 6px;
 }
 .default .go-with{
   font-family: "ESKlarheitGrotesk Smbd";
@@ -244,7 +244,7 @@ video {
 .terms {
   color: #fff;
   position: absolute;
-  font-family: "ESKlarheitGrotesk Xbd";
+  font-family: "ESKlarheitGrotesk Smbd";
   font-size: 7px;
   line-height: 7px;
   letter-spacing: -0.01em;

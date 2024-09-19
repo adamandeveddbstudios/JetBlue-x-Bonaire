@@ -132,7 +132,7 @@ function setupContent() {
  "<span class='sm blue'>New nonstop flights from </span><br><span class='blue city'>" + "NYC" + "</span> <span class='blue to'>to</span> <span class='blue city'>" + "Bonaire (BON)" + "</span>";
 
   //        h4[0].innerHTML +=
-  //  "<span class='sm blue'>Fly from </span><br><span class='blue city'>" + origin_formatted + "</span> <span class='blue to'>to</span> <span class='blue city'>" + destination_formatted + "</span>";
+  //  "<span class='sm blue'>New nonstop flights from<br><span class='blue city'>" + origin_formatted + "</span> <span class='blue to'>to</span> <span class='blue city'>" + destination_formatted + "</span>";
 
 
     // dynamic resize

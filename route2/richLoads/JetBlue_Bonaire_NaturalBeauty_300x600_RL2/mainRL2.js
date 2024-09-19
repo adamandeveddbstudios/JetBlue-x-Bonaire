@@ -79,7 +79,7 @@ h4[0].innerHTML +=
 
    
   //  h4[0].innerHTML +=
-  //  "<span class='sm blue'>Fly from </span><br><span class='blue city'>" + origin_formatted + "</span> <span class='blue to'>to<br></span> <span class='blue city'>" + destination_formatted + "</span>";
+  //  "<span class='sm blue'>New nonstop flight from </span><br><span class='blue city'>" + origin_formatted + "</span> <span class='blue to'>to<br></span> <span class='blue city'>" + destination_formatted + "</span>";
 
   if (showDefault) {
     h4[0].innerHTML = "<span class='default'><span class='go-width'>Go with</span> <span class='jetblue'>jetBlue</span></span>"; // - Populates main headline
