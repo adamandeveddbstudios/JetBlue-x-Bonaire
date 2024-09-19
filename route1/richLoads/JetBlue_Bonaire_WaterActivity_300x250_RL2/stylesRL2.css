@@ -179,7 +179,7 @@ video {
 #ctaAndPriceWrapper {
   display: flex;
   width: 264px;
-  top: 2px;
+  top: -15px;
 }
 
 #ctaAndPriceWrapper > * {

@@ -148,14 +148,18 @@ video {
 
 .default{
   color: #0000aa;
-  font-size: 32px;
-  line-height: 34px;
+  font-size: 42px;
+  line-height: 50px;
+  margin-bottom: -29px;
+  display: block;
+  margin-top: 32px;
 }
 .default .go-with{
   font-family: "ESKlarheitGrotesk Smbd";
 }
 .default .jetblue{
   font-family: "ESKlarheitGrotesk Xbd"; 
+  font-size: 50px;
 }
 #priceHolder {
   display: flex;
@@ -260,7 +264,7 @@ video {
 .terms {
   color: #fff;
   position: absolute;
-  font-family: "ESKlarheitGrotesk Xbd";
+  font-family: "ESKlarheitGrotesk Smbd";
   font-size: 7px;
   letter-spacing: -0.02em;
   line-height: 9px;
